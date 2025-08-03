@@ -84,11 +84,11 @@ Create initial metadata with approval tracking and project description:
 $ARGUMENTS
 
 ## Requirements
-<!-- Detailed user stories will be generated in /spec-requirements phase -->
+<!-- Detailed user stories will be generated in /kiro:spec-requirements phase -->
 
 ---
 **STATUS**: Ready for requirements generation
-**NEXT STEP**: Run `/spec-requirements {feature-name}` to generate detailed requirements
+**NEXT STEP**: Run `/kiro:spec-requirements {feature-name}` to generate detailed requirements
 ```
 
 #### design.md (Empty Template)
@@ -122,12 +122,12 @@ Add the new spec to the active specifications list with the generated feature na
 Follow the proper spec-driven development workflow with **interactive approval**:
 
 **Streamlined workflow with interactive approval:**
-1. **Generate requirements**: `/spec-requirements {feature-name}`
-2. **Generate design with interactive approval**: `/spec-design {feature-name}`
+1. **Generate requirements**: `/kiro:spec-requirements {feature-name}`
+2. **Generate design with interactive approval**: `/kiro:spec-design {feature-name}`
    - Will prompt: "requirements.mdをレビューしましたか？ [y/N]"
    - If 'y': Auto-approves requirements and generates design
    - If 'N': Stops for manual review
-3. **Generate tasks with interactive approval**: `/spec-tasks {feature-name}`
+3. **Generate tasks with interactive approval**: `/kiro:spec-tasks {feature-name}`
    - Will prompt for both requirements and design review
    - Auto-approves both phases when confirmed
 4. **Start implementation**: After all phases are complete

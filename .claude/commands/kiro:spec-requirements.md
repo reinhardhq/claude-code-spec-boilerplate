@@ -126,11 +126,11 @@ Generate the requirements document content ONLY. Do not include any review or ap
 The following is for Claude Code conversation only - NOT for the generated document:
 
 ### Next Phase Uses Interactive Approval
-After generating requirements.md, the next phase (`/spec-design $ARGUMENTS`) will use interactive approval:
+After generating requirements.md, the next phase (`/kiro:spec-design $ARGUMENTS`) will use interactive approval:
 
 **Next interaction will be**:
 ```
-/spec-design feature-name
+/kiro:spec-design feature-name
 # → "requirements.mdをレビューしましたか？ [y/N]"
 # → If 'y': Auto-approval + design generation
 # → If 'N': Stop and request review first
@@ -162,7 +162,7 @@ If needed, you can still manually approve by updating `.kiro/specs/$ARGUMENTS/sp
 }
 ```
 
-**Recommended**: Use the interactive approval in `/spec-design $ARGUMENTS` for better user experience.
+**Recommended**: Use the interactive approval in `/kiro:spec-design $ARGUMENTS` for better user experience.
 
 ## Instructions
 

@@ -358,10 +358,10 @@ This command now implements interactive approval:
 1. **Requirements Review Prompt**: Automatically prompts user to confirm requirements review
 2. **Auto-approval**: Updates spec.json automatically when user confirms with 'y'
 3. **Design Generation**: Proceeds immediately after approval
-4. **Next Phase**: Design is generated and ready for interactive approval by `/spec-tasks`
+4. **Next Phase**: Design is generated and ready for interactive approval by `/kiro:spec-tasks`
 
 ### Design Review for Next Phase
-After generating design.md, the next phase (`/spec-tasks $ARGUMENTS`) will use similar interactive approval:
+After generating design.md, the next phase (`/kiro:spec-tasks $ARGUMENTS`) will use similar interactive approval:
 
 **Preview of next interaction**:
 ```
